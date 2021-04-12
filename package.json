@@ -1,7 +1,7 @@
 {
   "name": "react-native-credit-card-input-view",
   "version": "0.0.6",
-  "description": "React native credit card input component with swipe gestures , click and long press for credit card view",
+  "description": "Easy (and good looking) credit-card input and credit-card View with swipe gestures , click and long press for your React Native Project",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
