@@ -15,8 +15,8 @@ import {
 import CreditCard from './CardView/CardView';
 import CCInput from './CCInput';
 import { InjectedProps } from './connectToState';
-import { Picker } from '@react-native-picker/picker';
-const sHorizontal = StyleSheet.create({
+													 
+const sHorizontal = StyleSheet.create({ 
   container: {
     alignItems: 'center',
     width: '100%',
@@ -266,7 +266,8 @@ const POSTAL_CODE_INPUT_WIDTH = 100; // https://github.com/yannickcr/eslint-plug
               styles.inputContainer,
               inputContainerStyle,
               { width: useVertical ? '100%' : CARD_NUMBER_INPUT_WIDTH },
-            ]} />
+            ]}
+          />
           <CCInput
             {...this._inputProps('expiry')}
             keyboardType="numeric"
@@ -290,25 +291,7 @@ const POSTAL_CODE_INPUT_WIDTH = 100; // https://github.com/yannickcr/eslint-plug
                 { width: useVertical ? '100%' : POSTAL_CODE_INPUT_WIDTH },
               ]} />
           )}
-
-          {/* <Text style={[styles.inputLabel]}>Card Type</Text> <Picker
-  selectedValue={this.state.cardType !=='' ? this.state.cardType:type}
-  style={{height: 50, width: '100%'}}
-  onValueChange={(itemValue, itemIndex) =>
-	  {
-    this.setState({cardType: itemValue});
-	  }
-	//console.log(itemValue)
-  }>
-  <Picker.Item label="Select Card Type" value="" />
-  <Picker.Item label="Visa" value="visa" />
-  <Picker.Item label="American Express" value="american-express" />
-  <Picker.Item label="Mastercard" value="master-card" />
-  <Picker.Item label="Diners Club" value="diners-club" />
-  <Picker.Item label="RuPay" value="rupay" />
-  <Picker.Item label="Discover" value="discover" />
-  <Picker.Item label="JCB" value="jcb" />
-			  </Picker> */}
+ 	  
         </ScrollView>
       </View>
     );
