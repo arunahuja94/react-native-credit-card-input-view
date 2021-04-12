@@ -43,7 +43,7 @@
     "lodash.values": "^4.3.0",
     "card-validator": "^8.1.0",
     "lodash.compact": "^3.0.1",
-    "react-native-flip-card-plus": "^1.0.3",
+    "react-native-flip-card-plus": "^1.0.3"
   },
   "devDependencies": {
     "babel-eslint": "^5.0.0",
