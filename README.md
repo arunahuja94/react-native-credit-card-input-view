@@ -4,10 +4,10 @@ Easy (and good looking) credit-card input for your React Native Project ğŸ’³ ğŸ’
 
 <br/>
 <p align="center">
-<img src="https://github.com/arunahuja94/react-native-credit-card-input-view/blob/master/preview-ios.gif?raw=true" width=200/>
-<img src="https://github.com/arunahuja94/react-native-credit-card-input-view/blob/master/preview-ios-lite.gif?raw=true" width=200/>
-<img src="https://github.com/arunahuja94/react-native-credit-card-input-view/blob/master/preview-android.gif?raw=true" width=200/>
-<img src="https://github.com/arunahuja94/react-native-credit-card-input-view/blob/master/preview-android-lite.gif?raw=true" width=200/>
+<img src="https://github.com/arunahuja94/react-native-credit-card-input-view/blob/main/preview-ios.gif?raw=true" width=200/>
+<img src="https://github.com/arunahuja94/react-native-credit-card-input-view/blob/main/preview-ios-lite.gif?raw=true" width=200/>
+<img src="https://github.com/arunahuja94/react-native-credit-card-input-view/blob/main/preview-android.gif?raw=true" width=200/>
+<img src="https://github.com/arunahuja94/react-native-credit-card-input-view/blob/main/preview-android-lite.gif?raw=true" width=200/>
 </p>
 
 Code:
