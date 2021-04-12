@@ -1,6 +1,7 @@
 
 # React Native Credit Card Input (UPDATED)
-Easy (and good looking) credit-card input for your React Native Project 💳 💳
+Easy (and good looking) credit-card input for your React Native Project 💳 
+Easy (and good looking) credit-card View with swipe gestures , click and long press 💳
 
 <br/>
 <p align="center">
