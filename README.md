@@ -127,6 +127,8 @@ LiteCreditCardInput does not support `requiresName`, `requiresCVC`, and `require
 | additionalInputsProps | PropTypes.objectOf(TextInput.propTypes) | An object with Each key of the object corresponding to the name of the field. Allows you to change all props documented in [RN TextInput](https://facebook.github.io/react-native/docs/textinput.html).
 
 
+##CardView Usage
+
 ```js
 import { CardView } from "react-native-credit-card-input-view";
 
@@ -143,8 +145,6 @@ import { CardView } from "react-native-credit-card-input-view";
 
 ```
 
-
-##CardView
 
 | Property | Type | Description |
 | --- | --- | --- |
