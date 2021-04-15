@@ -1,6 +1,6 @@
 {
   "name": "react-native-credit-card-input-view",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Easy (and good looking) credit-card input and credit-card View with swipe gestures , click and long press for your React Native Project",
   "main": "index.js",
   "scripts": {
@@ -43,7 +43,7 @@
     "lodash.values": "^4.3.0",
     "card-validator": "^8.1.0",
     "lodash.compact": "^3.0.1",
-    "react-native-flip-card-plus": "^1.0.3"
+    "react-native-flip-card-plus": "^1.0.4"
   },
   "devDependencies": {
     "babel-eslint": "^5.0.0",
