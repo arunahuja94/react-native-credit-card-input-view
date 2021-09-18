@@ -1,7 +1,3 @@
-//import valid from "card-validator";
-import pick from "lodash.pick";
-import values from "lodash.values";
-import every from "lodash.every";
 var valid = require("card-validator");
 
 const toStatus = validation => {
@@ -9,6 +5,10 @@ const toStatus = validation => {
          validation.isPotentiallyValid ? "incomplete" :
          "invalid";
 };
+
+const validationStatuses = (cardDataObject, filterFromcardDataObject) => {
+  return {...filterFromcardDataObject} = cardDataObject;
+}
 
 const FALLBACK_CARD = { gaps: [4, 8, 12], lengths: [16], code: { size: 3 } };
 export default class CCFieldValidator {
@@ -23,17 +23,17 @@ export default class CCFieldValidator {
     const maxCVCLength = (numberValidation.card || FALLBACK_CARD).code.size;
     const cvcValidation = valid.cvv(formValues.cvc, maxCVCLength);
 
-    const validationStatuses = pick({
+    const cardDataObject = {
       number: toStatus(numberValidation),
       expiry: toStatus(expiryValidation),
       cvc: toStatus(cvcValidation),
       name: !!formValues.name ? "valid" : "incomplete",
       postalCode: this._validatePostalCode(formValues.postalCode),
-    }, this._displayedFields);
+    };
 
     return {
-      valid: every(values(validationStatuses), status => status === "valid"),
-      status: validationStatuses,
+      valid: Object.values(validationStatuses(cardDataObject, this._displayedFields)).every(status => status === "valid"),
+      status: validationStatuses(cardDataObject, this._displayedFields),
     };
   };
 }

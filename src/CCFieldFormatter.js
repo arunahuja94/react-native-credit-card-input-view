@@ -1,6 +1,4 @@
-//import valid from "card-validator";
 import { removeNonNumber, removeLeadingSpaces } from "./Utilities";
-import pick from "lodash.pick";
 var valid = require("card-validator");
 
 const limitLength = (string = "", maxLength) => string.substr(0, maxLength);
@@ -22,15 +20,14 @@ export default class CCFieldFormatter {
 
   formatValues = (values) => {
     const card = valid.number(values.number).card || FALLBACK_CARD;
-//console.log(card);
-    return pick({
+    return {...this._displayedFields} = {
       type: card.type,
       number: this._formatNumber(values.number, card),
       expiry: this._formatExpiry(values.expiry),
       cvc: this._formatCVC(values.cvc, card),
       name: removeLeadingSpaces(values.name),
       postalCode: removeLeadingSpaces(values.postalCode),
-    }, this._displayedFields);
+    };
   };
 
   _formatNumber = (number, card) => {

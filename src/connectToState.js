@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import CCFieldFormatter from "./CCFieldFormatter";
 import CCFieldValidator from "./CCFieldValidator";
-import compact from "lodash.compact";
 
 export const InjectedProps = {
   focused: PropTypes.string,
@@ -72,13 +71,13 @@ export default function connectToState(CreditCardInput) {
 
     _displayedFields = () => {
       const { requiresName, requiresCVC, requiresPostalCode } = this.props;
-      return compact([
+      return [
         "number",
         "expiry",
         requiresCVC ? "cvc" : null,
         requiresName ? "name" : null,
         requiresPostalCode ? "postalCode" : null,
-      ]);
+      ].filter(Boolean);
     };
 
     _focusPreviousField = field => {
